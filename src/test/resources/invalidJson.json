@@ -1,0 +1,94 @@
+{
+  "details": "http://github.com/adamcooke/vat-rates",
+  "rates": [
+    {
+      "name": "Spain",
+      "code": "ES",
+      "periods": [
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "super_reduced": 4,
+            "reduced": 10,
+            "standard": 21
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "code": "BG",
+      "country_code": "BG",
+      "periods": [
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "reduced": 9,
+            "standard": 20
+          }
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "country_code": "HR",
+      "periods": [
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "reduced1": 5,
+            "reduced2": 13,
+            "standard": 25
+          }
+        }
+      ]
+    },
+    {
+      "name": "Belgium",
+      "code": "BE",
+      "country_code": "BE",
+      "periods": [
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "reduced1": 6,
+            "reduced2": 12,
+            "standard": 21,
+            "parking": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "Slovakia",
+      "code": "SK",
+      "country_code": "SK"
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "country_code": "DE"
+    },
+    {
+      "name": "Portugal",
+      "code": "PT",
+      "country_code": "PT",
+      "periods": [
+        {
+          "effective_from": "0000-01-01",
+          "rates": {
+            "reduced1": 6,
+            "reduced2": 13,
+            "standard": 23,
+            "parking": 13
+          }
+        }
+      ]
+    },
+    {
+      "name": "Austria",
+      "code": "AT",
+      "country_code": "AT"
+    }
+  ]
+}

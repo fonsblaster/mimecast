@@ -1,5 +1,6 @@
 package com.mimecast.eu.services;
 
+import com.mimecast.eu.aspect.LogEverything;
 import com.mimecast.eu.configuration.PropertiesBean;
 import com.mimecast.eu.exception.MimecastException;
 import com.mimecast.eu.model.Mimecast;
@@ -30,6 +31,7 @@ public class MimecastServiceImpl implements MimecastService {
     private final PropertiesBean propertiesBean;
 
     @Override
+    @LogEverything
     public List<TopVat> getVatCountries(VatType vatType) throws RestClientException {
         log.info("Fetching json from server {}", propertiesBean.getMimecastUrl());
         Mimecast mimecast = Optional.ofNullable(restOperations.getForObject(propertiesBean.getMimecastUrl(), Mimecast.class))

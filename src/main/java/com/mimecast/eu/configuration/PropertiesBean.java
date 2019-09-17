@@ -1,13 +1,28 @@
 package com.mimecast.eu.configuration;
 
-import lombok.Getter;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
-@Getter
+@Component
+@ConfigurationProperties("application")
 public class PropertiesBean {
-    @Value("${countries.to.analyze}")
-    private Integer countriesToAnalyze;
 
-    @Value("${mimecast.url}")
+    private Integer countriesToAnalyze;
     private String mimecastUrl;
+
+    public Integer getCountriesToAnalyze() {
+        return countriesToAnalyze;
+    }
+
+    public void setCountriesToAnalyze(Integer countriesToAnalyze) {
+        this.countriesToAnalyze = countriesToAnalyze;
+    }
+
+    public String getMimecastUrl() {
+        return mimecastUrl;
+    }
+
+    public void setMimecastUrl(String mimecastUrl) {
+        this.mimecastUrl = mimecastUrl;
+    }
 }
